@@ -10,7 +10,8 @@
     "test": "ng test",
     "serve:ssr:relearn-angular": "node dist/relearn-angular/server/server.mjs",
     "process": "node ./tools/copy-files.mjs && node ./tools/alter-polyfills.mjs",
-    "deploy": "pnpm run build && wrangler pages deploy dist/cloudflare"
+    "deploy": "pnpm run build && wrangler pages deploy dist/cloudflare",
+    "json-server":"json-server --watch db.json"
   },
   "private": true,
   "dependencies": {
